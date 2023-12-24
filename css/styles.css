@@ -1,0 +1,391 @@
+/** GENERAL  **/
+@font-face {
+  font-family: 'Brown';
+  src: url('../fonts/Brown-Bold.woff2') format('woff2'),
+    url('../fonts/Brown-Bold.woff') format('woff'),
+    url('../fonts/Brown-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brown';
+  src: url('../fonts/Brown-Regular.woff2') format('woff2'),
+    url('../fonts/Brown-Regular.woff') format('woff'),
+    url('../fonts/Brown-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brown';
+  src: url('../fonts/Brown-Light.woff2') format('woff2'),
+    url('../fonts/Brown-Light.woff') format('woff'),
+    url('../fonts/Brown-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brown';
+  src: url('../fonts/Brown-Thin.woff2') format('woff2'),
+    url('../fonts/Brown-Thin.woff') format('woff'),
+    url('../fonts/Brown-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('../fonts/SofiaPro-Bold.woff2') format('woff2'),
+    url('../fonts/SofiaPro-Bold.woff') format('woff'),
+    url('../fonts/SofiaPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('../fonts/SofiaPro-SemiBold.woff2') format('woff2'),
+    url('../fonts/SofiaPro-SemiBold.woff') format('woff'),
+    url('../fonts/SofiaPro-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('../fonts/SofiaProSoft-Medium.woff2') format('woff2'),
+    url('../fonts/SofiaProSoft-Medium.woff') format('woff'),
+    url('../fonts/SofiaProSoft-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('../fonts/SofiaPro-Regular.woff2') format('woff2'),
+    url('../fonts/SofiaPro-Regular.woff') format('woff'),
+    url('../fonts/SofiaPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('../fonts/SofiaPro-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Brown', sans-serif;
+  font-weight: normal;
+}
+
+.general-container {
+  display: flex;
+  background-color: #F7FDFC;
+}
+
+.general-container>.left-container,
+.general-container>.right-container {
+  flex: 1;
+}
+
+
+
+/** LEFT FLEX CONTAINER **/
+.left-container {
+  /* background: red; */
+  text-align: left;
+  padding: 180px 0 0 0;
+}
+
+.project-logo {
+  /* background: blue; */
+  padding: 0 50px 0 120px;
+  margin: auto;
+}
+
+.project-logo .logo {
+  width: 20%;
+}
+
+.paragraph {
+  /* background: yellow; */
+  padding: 0 50px 0 132px;
+  margin: auto;
+}
+
+.paragraph h1 {
+  color: #000B0A;
+  font-family: 'Brown', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: -0.6px;
+}
+
+.paragraph .desktop-para {
+  color: #737373;
+  font-family: 'Brown', sans-serif;
+  font-weight: normal;
+}
+
+.paragraph .mobile-para {
+  display: none;
+}
+
+
+
+/** RIGHT FLEX DIV  **/
+.right-container {
+  /* background-color: purple; */
+  padding: 40px 30px 100px 0;
+}
+
+form {
+  width: 75%;
+  border-radius: 6px;
+  margin: auto;
+  padding: 40px;
+  background: #fff;
+  box-shadow: 0px 4px 50px 0px #0408131A;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-row .form-group {
+  width: 48%;
+  margin: 12px 0;
+}
+
+.form-full-row .form-group {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+}
+
+form label {
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  color: #011C34;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+select {
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 500;
+  color: #011C34;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  margin-top: 8px;
+  border: 1px solid #F0F0F0;
+  border-radius: 2px;
+  box-sizing: border-box;
+  /* Remove some browsers default styles on inputs*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Hide the default calendar icon by making it transparent */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button {
+  opacity: 0;
+  background: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  cursor: pointer;
+}
+
+input[type="date"] {
+  position: relative;
+  background-image: url('../images/calendar.png');
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  padding-right: 40px;
+}
+
+select {
+  background-image: url('../images/dropdown-arrow.png');
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  padding-right: 40px;
+}
+
+.form-group select {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input[type="password"] {
+  background-image: url('../images/password-show.png');
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  padding-right: 40px;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="date"]::placeholder,
+select::placeholder {
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 300;
+  color: #737373;
+  letter-spacing: 0.2px;
+  font-size: 14px;
+}
+
+select {
+  &:invalid {
+    color: #737373;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+  }
+
+  option {
+    color: #011C34;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: 500;
+    color: #011C34;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+  }
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border: 2px solid #2EC4B6;
+  outline: none;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background: #2EC4B6;
+  box-shadow: 0px 10px 40px 0px #0000001A;
+  color: #fff;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  padding: 15px;
+  margin: 20px 0 8px 0;
+  border: none;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+input[type="submit"]:hover {
+  background: #7376C6;
+}
+
+.right-container form p.disclaimer {
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 14px;
+  text-align: center;
+}
+
+.right-container form p.disclaimer a {
+  color: #2EC4B6;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 820px) {
+  .general-container {
+    display: block;
+  }
+
+  .left-container {
+    display: block;
+    padding: 40px 0 0 0;
+  }
+
+  .project-logo {
+    width: 90%;
+    padding: 0;
+  }
+
+  .project-logo .logo {
+    width: 18%;
+  }
+
+  .paragraph {
+    padding: 0 0 0 20px;
+    width: 90%;
+  }
+
+  .paragraph h1 {
+    font-size: 30px;
+  }
+
+  .paragraph .desktop-para {
+    display: none;
+  }
+
+  .paragraph .mobile-para {
+    display: block;
+    color: #737373;
+    font-family: 'Brown', sans-serif;
+    font-weight: 300;
+  }
+
+  .right-container {
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+  }
+
+  form {
+    width: 90% !important;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 50px 0px #0408131A;
+  }
+
+  .form-row {
+    display: block;
+  }
+
+  .form-row .form-group {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .form-full-row .form-group {
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {}
